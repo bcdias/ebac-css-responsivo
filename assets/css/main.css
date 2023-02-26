@@ -1,0 +1,150 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #efefef;
+}
+
+.cabecalho {
+    background-color: blue;
+    padding: 30px 0;
+    width: 100vw;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container--cabecalho {
+    align-items: center;
+    color: #fefefe;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: 50% 50%;
+    letter-spacing: 1px;
+
+}
+
+.cabecalho__titulo {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.menu__lista {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: .25rem;
+}
+
+
+.sobre {
+    padding-top: 3rem;
+}
+
+.sobre__img,
+.card__img {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.sobre__titulo__container,
+.produtos__titulo__container {
+    border-bottom: 2px solid blue;
+    margin-bottom: 1.5rem;
+    padding-bottom: .75rem;
+}
+
+.sobre__titulo,
+.produtos__titulo {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sobre__conteudo--container {
+    margin-bottom: 3rem;
+}
+
+.sobre__conteudo {
+    line-height: 1.5rem;
+}
+
+.produtos__cad {
+    margin-bottom: 2rem;
+}
+
+.card__img--margem {
+    margin-bottom: 1rem;
+}
+
+.card__titulo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card__conteudo {
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: .75rem;
+}
+
+.card__botao {
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: #fefefe;
+    font-weight: bold;
+    padding: .5rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .container--cabecalho {
+        grid-template-columns: 70% 30%;
+
+    }
+
+    .menu__lista {
+        display: grid;
+        column-gap: 2%;
+        grid-template-columns: 55% 43%;
+        justify-content: end;
+    }
+
+    .menu__item {
+        text-align: end;
+    }
+
+    .produtos__cards__container {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .sobre {
+        display: grid;
+        grid-template-columns: 35% 63%;
+        column-gap: 2%;
+    }
+
+    .produtos__cards__container {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        column-gap: 2%;
+    }
+}
+
+@media screen  and (min-width: 1024px) {
+    .container {
+        max-width: 920px;
+        margin: auto;
+    }
+}
